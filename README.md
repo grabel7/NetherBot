@@ -16,7 +16,7 @@ Como faço para definir as variáveis?
 Você quer um input. Porém, inputs não funcionam com bots, afinal o console irá perguntar para o próprio bot qual o input dele, excluindo o usuário. Então para isso, utilizamos o seguinte código abaixo do client.tree: "async def nether(interaction: discord.Interaction, x: float, z: float)". Ele irá demarcar que precisaremos do valor de X (em float) e de Z para que o código seja compilado corretamente, além de solicitar uma interação do próprio programa. Para conseguirmos as coordenadas corretas, ou seja, os valores de X e Z, utilizamos: ```"x = nethera(x, z)"``` que irá requisitar os valores X e Z da Nethera, que foi previamente definida. E então, para que o bot nos responda, utilizamos o seguinte código: "await interaction.response.send_message(f'Se você entrar em um portal no Overworld, você irá parar no Nether com essas coordenadas: {x}')" A variável X serão as coordenadas divididas por 8, como requisitado para o bot.
 
 O mesmo também foi feito no oposto, onde fiz um código que multiplica esses valores por 8, corrigindo as coordenadas do Overworld. O código é o mesmo, mas claro, com outra def. 
-```
+```ruby
 @client.tree.command(name='overworld')
 async def overworld(interaction: discord.Interaction, x: float, z: float):
     pos = overworld1(x, z)

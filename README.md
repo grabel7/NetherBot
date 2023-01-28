@@ -4,6 +4,9 @@ Um repositório para a explicação simples do funcionamento de um Bot de Discor
 # Introdução
  No final do ano de 2022, o Discord publicou a funcionalidade dos slash commands, comandos por / que facilitavam o acesso do usuário. Neste repositório, irei explicar como escrever um código simples utilizando dessa tecnologia e misturando o entretenimento com o jogo Minecraft.
  
+# Bibliotecas
+Utilizaremos das biliotecas discord.py e discord.ext para o funcionamento do código
+ 
 # Conseguindo um Token
 A primeira coisa que você deve fazer ao cadastrar um bot, é ir atrás de um token. Você consegue um cadastrando um bot no site: https://discord.com/developers/applications. Tenha muito cuidado, pois cada Token é único e o seu vazamento pode dar acesso a usuários maliciosos.
 

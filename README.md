@@ -17,6 +17,10 @@ Você quer um input. Porém, inputs não funcionam com bots, afinal o console ir
 
 O mesmo também foi feito no oposto, onde fiz um código que multiplica esses valores por 8, corrigindo as coordenadas do Overworld. O código é o mesmo, mas claro, com outra def. 
 ```ruby
+def overworld1(x: float, z: float):
+    return ['X: ', x * 8, 'Z: ', z * 8]
+```
+```ruby
 @client.tree.command(name='overworld')
 async def overworld(interaction: discord.Interaction, x: float, z: float):
     pos = overworld1(x, z)
